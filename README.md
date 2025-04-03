@@ -2,7 +2,7 @@
 
 ## Day 1
 1) It is expected that compression factors should increase for data as the range of values it can take on decrease and the randomness of those values decrease. I would expect disk usage and CPU wall time to be largest for random datasets over large ranges with no patterns for lossless compression algorithms. Disk usage is increased because it is not possible to decrease the size of the bytestream. CPU wall time would increase as the algorithm would need to exhaust all potential methods of compressing the bytestream before determining it is not possible.
-2) See histograms below.
+2) See histograms in `/day1_plots`.
 3) Answers below
 	1) Only random floating point numbers result shown in first plot with 'vpx'. All the numbers are random floats and we can see their is little effect on basket size. We potentially gain increased compression factors for increased basket sizes. However, the compression factor increases from 1.09 to 1.10 from a basket size of 4 kb to 1024 kb.	
 	   
